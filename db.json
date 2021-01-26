@@ -1,0 +1,45 @@
+{
+    "bg": "https://j7e4y8f9.stackpathcdn.com//wp-content/uploads/2019/11/Full-HD-Backgroun.jpg",
+    "title": "Quiz Aleatório",
+    "description": "Teste se sua memória aleatória funciona aleatoriamente bem ou mal nesse teste aleatório.",
+    "questions": [
+      {
+        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
+        "title": "Em que ano foi lançado o Grand Theft Auto: San Andreas?",
+        "description": "Essa é para os fortes!",
+        "answer": 2,
+        "alternatives": [
+          "2002",
+          "2003",
+          "2004",
+          "2005"
+        ]
+      },
+      {
+        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
+        "title": "Quem é o blacklist número 1 do Need for Speed Most Wanted",
+        "description": "Bons tempos...",
+        "answer": 0,
+        "alternatives": [
+           "Bull",
+           "Razor",
+           "Ronnie",
+           "Kaze"
+        ]
+      }
+    ],
+    "external": [
+      ""
+    ],
+    "theme": {
+      "colors": {
+        "primary": "#221266",
+        "secondary": "#2a3eb1",
+        "mainBg": "#2c387e",
+        "contrastText": "#FFFFFF",
+        "wrong": "#FF5722",
+        "success": "#4CAF50"
+      },
+      "borderRadius": "4px"
+    }
+  }
