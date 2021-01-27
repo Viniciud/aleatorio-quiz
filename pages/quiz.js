@@ -9,18 +9,11 @@ import QuizBackground from '../src/components/QuizBackground';
 
 export default function QuizPage() {
   const router = useRouter();
-  const params = (new URL(document.location)).searchParams;
-  const name = params.get('name');
 
   return (
     <QuizBackground backgroundImage={db.bg}>
       <h1 style={{ marginLeft: '50px' }}>
         Por enquanto está assim
-        {' '}
-        <div style={{ color: 'yellow' }}>
-          {name}
-          !
-        </div>
       </h1>
       <a
         onClick={() => {
