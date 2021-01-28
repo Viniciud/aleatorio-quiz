@@ -1,32 +1,68 @@
 {
     "bg": "https://www.imagemhost.com.br/images/2021/01/26/Background-2.png",
     "title": "Quiz Aleatório",
-    "description": "Teste se sua memória aleatória funciona aleatoriamente bem ou mal nesse teste aleatório.",
+    "description": "Um quiz aleatório é o que você vai ver, para algum DEV aleatório tentar responder. Se você é esse Dev por favor preste atenção, caso não saiba as respostas, deu ruim então!",
     "questions": [
       {
-        "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-        "title": "Em que ano foi lançado o Grand Theft Auto: San Andreas?",
-        "description": "Essa é para os fortes!",
-        "answer": 2,
+        "image": "https://media4.giphy.com/media/qHSS4bGQUTcY0/200w.webp?cid=ecf05e470fml5at3vj3czxjrnauah3ha8uh1f8j30mgl4muv&rid=200w.webp",
+        "title": "Como mostrar na tela um alert em javascript?",
+        "description": "Um aquecimento...",
+        "answer": 0,
         "alternatives": [
-          "2002",
-          "2003",
-          "2004",
-          "2005"
+           "alert('Hello World!')",
+           "window.show('Olá Palavra!')",
+           "windows.alert('Hello Word!')",
+           "show.alert('Olá Mudo!')"
         ]
       },
       {
-        "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-        "title": "Quem é o blacklist número 1 do Need for Speed Most Wanted",
-        "description": "Bons tempos...",
-        "answer": 0,
+        "image": "https://media1.giphy.com/media/xT8qBsOjMOcdeGJIU8/100.webp?cid=ecf05e4760wjqxccdytyc4xyfntl27ngs4w0a0bmccjruc3n&rid=100.webp",
+        "title": "Apenas uma alternativa está correta.",
+        "description": "Mais um pra aquecer!",
+        "answer": 2,
         "alternatives": [
-           "Bull",
-           "Razor",
-           "Ronnie",
-           "Kaze"
+          "import {React} from 'react'; ",
+          "import React from 'react': ",
+          "import React from 'react'; "
+        ]
+      },
+      {
+        "image": "https://media1.giphy.com/media/R1ibMbjnBAOOyvXgTu/200w.webp?cid=ecf05e4760wjqxccdytyc4xyfntl27ngs4w0a0bmccjruc3n&rid=200w.webp",
+        "title": "Porque o ReactJS usa className ao invés do atributo class?",
+        "description": "Bora pra mais uma!",
+        "answer": 2,
+        "alternatives": [
+          "Porque o atributo class é uma (palavra chave) do javascript",
+          "Porque o atributo class é uma (palavra chave) do css",
+          "Porque não existe class em javascript"
+        ]
+      },
+      {
+        "image": "https://media2.giphy.com/media/6utVzLiyU9OuHbd70D/200w.webp?cid=ecf05e47vxj9wth0tq4pv5yv963rlg0m78n2ofylf3aqyl0a&rid=200w.webp",
+        "title": "Em que ano foi criado o React?",
+        "description": "Vai pensando..",
+        "answer": 2,
+        "alternatives": [
+          "2012",
+          "2014",
+          "2016",
+          "2011"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/AMIzXteYxiNWM/200w.webp?cid=ecf05e47j8ylr0pc97gez77osltt1ajs2ld88lmd6wbknmny&rid=200w.webp",
+        "title": "Quantos municípios tem o Brasil?",
+        "description": "Eu falei que era um quiz aleatório..",
+        "answer": 2,
+        "alternatives": [
+          "4.944",
+          "5.570",
+          "5.521",
+          "7.232"
         ]
       }
+      
+      
     ],
     "external": [
       ""

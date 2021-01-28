@@ -1,9 +1,4 @@
-/* eslint-disable no-alert */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-restricted-globals */
-/* eslint-disable react/button-has-type */
-/* eslint-disable import/no-unresolved */
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
@@ -14,10 +9,17 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-import Button from '../src/components/Button';
 import Input from '../src/components/Input';
+import Button from '../src/components/Button';
 
-export const QuizContainer = styled.div`
+// const BackgroundImage = styled.div`
+//   background-image: url(${db.bg});
+//   flex: 1;
+//   background-size: cover;
+//   background-position: center;
+// `;
+
+const QuizContainer = styled.div`
   width: 100%;
   max-width: 350px;
   padding-top: 45px;
@@ -30,16 +32,12 @@ export const QuizContainer = styled.div`
 
 export default function Home() {
   const router = useRouter();
-  const [name, setName] = useState('');
-
-  function tryWithoutName() {
-    alert('Sem nome você não consegue ir para o quiz!');
-  }
+  const [name, setName] = React.useState('');
 
   return (
     <QuizBackground backgroundImage={db.bg}>
       <Head>
-        <title>Aleatório Quiz</title>
+        <title>{db.title}</title>
       </Head>
       <QuizContainer>
         <QuizLogo />
@@ -48,31 +46,25 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
-            <form onSubmit={(event) => {
-              event.preventDefault();
-
-              if (name.length === 0) {
-                tryWithoutName();
-              } else {
-                router.push(`/quiz?name=${name}`);
-              }
+            <h5 style={{ marginBottom: 15 }}>{db.description}</h5>
+            <form onSubmit={(infosDoEvento) => {
+              infosDoEvento.preventDefault();
+              router.push(`/quiz?name=${name}`);
             }}
             >
               <Input
-                onChange={(event) => {
-                  setName(event.target.value);
-                }}
-                placeholder="Me diz teu nome"
+                name="nomeDoUsuario"
+                onChange={(infosDoEvento) => setName(infosDoEvento.target.value)}
+                placeholder="Diz ai seu nome"
+                value={name}
               />
-              <Button>
+              <Button type="submit">
                 JOGAR
-                {' '}
-                {name}
               </Button>
             </form>
           </Widget.Content>
         </Widget>
+
         <Widget>
           <Widget.Content>
             <h1>Quizes da Galera</h1>

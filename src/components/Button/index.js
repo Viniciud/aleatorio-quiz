@@ -1,23 +1,31 @@
 /* eslint-disable linebreak-style */
 import styled from 'styled-components';
-import db from '../../../db.json';
 
 const Button = styled.button`
-    border: none;
-    margin: 10px 0px 5px 0px;
-    width: 100%;
-    height: 40px;
-    border-radius: 8px;
-    background-color: ${db.theme.colors.secondary};
-    color: white;
-    overflow: hidden;
-    transition: 0.8s;
+  background-color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.contrastText};
+  border-radius: ${({ theme }) => theme.borderRadius};
+  border: 0;
 
-    &:hover {
-        background-color: ${db.theme.colors.primary};
-        cursor: pointer;
-    }
-    
+  width: 100%;
+  padding: 10px 16px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1;
+  text-transform: uppercase;
+  outline: 0;
+  transition: .3s;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    opacity: .5;
+  }
+
+  &:disabled {
+    background-color: #979797;
+    cursor: not-allowed;
+  }
 `;
 
 export default Button;
