@@ -40,21 +40,21 @@ export default function App({ Component, pageProps }) {
           href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
           rel="stylesheet"
         />
+        <meta property="og:type " content="game" />
         <meta property="og:title" content="Um quiz aleatório" />
         <meta
           property="og:image"
           content="https://www.imagemhost.com.br/images/2021/01/26/Background-2.png"
         />
-        <meta property="og:type " content="game" />
-        <meta
-          property="og:description"
-          content="Um desafio aleatório para Devs aleatórios"
-        />
+        <meta property="og:site_name " content="Aleatório Quiz" />
         <meta
           property="og:url"
           content="https://aleatorio-quiz.viniciud.vercel.app/"
         />
-        <meta property="og:site_name " content="Aleatório Quiz" />
+        <meta
+          property="og:description"
+          content="Um desafio aleatório para Devs aleatórios"
+        />
       </Head>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
