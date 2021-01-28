@@ -23,25 +23,27 @@
         "alternatives": [
           "import {React} from 'react'; ",
           "import React from 'react': ",
-          "import React from 'react'; "
+          "import React from 'react'; ",
+          "import React of 'react';"
         ]
       },
       {
         "image": "https://media1.giphy.com/media/R1ibMbjnBAOOyvXgTu/200w.webp?cid=ecf05e4760wjqxccdytyc4xyfntl27ngs4w0a0bmccjruc3n&rid=200w.webp",
         "title": "Porque o ReactJS usa className ao invés do atributo class?",
         "description": "Bora pra mais uma!",
-        "answer": 2,
+        "answer": 0,
         "alternatives": [
           "Porque o atributo class é uma (palavra chave) do javascript",
           "Porque o atributo class é uma (palavra chave) do css",
-          "Porque não existe class em javascript"
+          "Porque não existe class em javascript",
+          "Porque só funciona em componentes de classe"
         ]
       },
       {
         "image": "https://media2.giphy.com/media/6utVzLiyU9OuHbd70D/200w.webp?cid=ecf05e47vxj9wth0tq4pv5yv963rlg0m78n2ofylf3aqyl0a&rid=200w.webp",
         "title": "Em que ano foi criado o React?",
         "description": "Vai pensando..",
-        "answer": 2,
+        "answer": 3,
         "alternatives": [
           "2012",
           "2014",
@@ -51,16 +53,29 @@
       },
       {
         "image": "https://media0.giphy.com/media/AMIzXteYxiNWM/200w.webp?cid=ecf05e47j8ylr0pc97gez77osltt1ajs2ld88lmd6wbknmny&rid=200w.webp",
-        "title": "Quantos municípios tem o Brasil?",
-        "description": "Eu falei que era um quiz aleatório..",
+        "title": "Em CSS, o que são seletores?",
+        "description": "Aqui vai uma de CSS..",
         "answer": 2,
         "alternatives": [
-          "4.944",
+          "São funções padrões que ajudam a controlar as variáveis para o CSS",
+          "É um padrão usado para colocar animações no CSS",
+          "São padrões usados ​​para selecionar elemento(s) que você deseja estilizar",
+          "Raramente é usado, então não é necessário saber"
+        ]
+      },
+      {
+        "image": "https://media0.giphy.com/media/AMIzXteYxiNWM/200w.webp?cid=ecf05e47j8ylr0pc97gez77osltt1ajs2ld88lmd6wbknmny&rid=200w.webp",
+        "title": "Quantos municípios tem o Brasil?",
+        "description": "Eu falei que era um quiz aleatório..",
+        "answer": 1,
+        "alternatives": [
+          "5.644",
           "5.570",
           "5.521",
-          "7.232"
+          "6.232"
         ]
       }
+      
       
       
     ],
@@ -73,7 +88,7 @@
         "secondary": "#2a3eb1",
         "mainBg": "#2c387e",
         "contrastText": "#FFFFFF",
-        "wrong": "#FF5722",
+        "wrong": "#B22222",
         "success": "#4CAF50"
       },
       "borderRadius": "4px"
