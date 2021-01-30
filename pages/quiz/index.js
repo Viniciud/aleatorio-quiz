@@ -1,17 +1,25 @@
 /* eslint-disable linebreak-style */
 /* eslint-disable react/prop-types */
 import React from "react";
-import db from "../db.json";
-import Widget from "../src/components/Widget";
-import QuizLogo from "../src/components/QuizLogo";
-import QuizBackground from "../src/components/QuizBackground";
-import QuizContainer from "../src/components/QuizContainer";
-import AlternativesForm from "../src/components/AlternativesForm";
-import Button from "../src/components/Button";
+import { Lottie } from '@crello/react-lottie';
+import db from "../../db.json";
+import Widget from "../../src/components/Widget";
+import QuizLogo from "../../src/components/QuizLogo";
+import QuizBackground from "../../src/components/QuizBackground";
+import QuizContainer from "../../src/components/QuizContainer";
+import AlternativesForm from "../../src/components/AlternativesForm";
+import Button from "../../src/components/Button";
+
+import loadingAnimation from '../../src/screens/Quiz/animations/loading.json';
+
+import { useRouter } from 'next/router';
+
 
 function ResultWidget({ results }) {
   const params = new URL(document.location).searchParams;
   const name = params.get("name");
+  
+  const router = useRouter();
 
   const qtdCorrect = results.reduce((somatoriaAtual, resultAtual) => {
     const isAcerto = resultAtual === true;
@@ -23,7 +31,7 @@ function ResultWidget({ results }) {
 
   return (
     <Widget>
-      <Widget.Header>Tela de Resultado:</Widget.Header>
+      <Widget.Header>Resultado: </Widget.Header>
 
       <Widget.Content>
         <div>
@@ -71,12 +79,18 @@ function ResultWidget({ results }) {
               }}
               key={`result__${result}`}
             >
-              User\{name}>{index + 1} Resultado:
+              User:\{name ? name : 'unknown'}>{index + 1} Resultado:
               {result === true ? " Success" : " Error"}
             </h3>
           ))}
         </div>
       </Widget.Content>
+      <div>
+        <Button onClick={() => {
+          router.push(`/`);
+        }}>
+          IR PARA INÍCIO</Button>
+      </div>
     </Widget>
   );
 }
@@ -85,8 +99,14 @@ function LoadingWidget() {
   return (
     <Widget>
       <Widget.Header>Carregando...</Widget.Header>
-
-      <Widget.Content>[Desafio do Loading]</Widget.Content>
+      <Widget.Content style={{ display: 'flex', justifyContent: 'center' }}>
+        <Lottie
+          width="200px"
+          height="200px"
+          className="lottie-container basic"
+          config={{ animationData: loadingAnimation, loop: true, autoplay: true }}
+        />
+      </Widget.Content>
     </Widget>
   );
 }
@@ -154,7 +174,7 @@ function QuestionWidget({
                   style={{ display: "none" }}
                   id={alternativeId}
                   name={questionId}
-                  onChange={() => setSelectedAlternative(alternativeIndex)}
+                  onClick={() => setSelectedAlternative(alternativeIndex)}
                   type="radio"
                 />
                 {alternative}
@@ -202,7 +222,7 @@ export default function QuizPage() {
     // fetch() ...
     setTimeout(() => {
       setScreenState(screenStates.QUIZ);
-    }, 1 * 1000);
+    }, 2 * 1000);
     // nasce === didMount
   }, []);
 

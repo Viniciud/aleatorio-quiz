@@ -1,4 +1,5 @@
-import styled from "styled-components";
+/* eslint-disable linebreak-style */
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -64,7 +65,7 @@ Widget.Topic = styled.a`
   &:hover,
   &:focus {
     opacity: 0.5;
-    border: 2px solid #4b0082;
+    border: 1px solid white;
   }
 `;
 

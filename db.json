@@ -17,19 +17,19 @@
       },
       {
         "image": "https://media1.giphy.com/media/xT8qBsOjMOcdeGJIU8/100.webp?cid=ecf05e4760wjqxccdytyc4xyfntl27ngs4w0a0bmccjruc3n&rid=100.webp",
-        "title": "Apenas uma alternativa está correta.",
-        "description": "Mais um pra aquecer!",
+        "title": "O que significa a sigla JSX?.",
+        "description": "Vai na calma..",
         "answer": 2,
         "alternatives": [
-          "import {React} from 'react'; ",
-          "import React from 'react': ",
-          "import React from 'react'; ",
-          "import React of 'react';"
+          "Javascript Syntax eXperience ",
+          "Javascript Sintese eXtension",
+          "JavaScript Syntax eXtension ",
+          "Javascript Syntax X';"
         ]
       },
       {
         "image": "https://media1.giphy.com/media/R1ibMbjnBAOOyvXgTu/200w.webp?cid=ecf05e4760wjqxccdytyc4xyfntl27ngs4w0a0bmccjruc3n&rid=200w.webp",
-        "title": "Porque o ReactJS usa className ao invés do atributo class?",
+        "title": "Porque o ReactJS usa o atributo className ao invés do atributo class?",
         "description": "Bora pra mais uma!",
         "answer": 0,
         "alternatives": [
@@ -52,7 +52,7 @@
         ]
       },
       {
-        "image": "https://media0.giphy.com/media/AMIzXteYxiNWM/200w.webp?cid=ecf05e47j8ylr0pc97gez77osltt1ajs2ld88lmd6wbknmny&rid=200w.webp",
+        "image": "https://media3.giphy.com/media/hczDQdBHbN5L2/200w.webp?cid=ecf05e47t94oxzpovrt5fhurt61ephyqn554dn8v4cq5oc1c&rid=200w.webp",
         "title": "Em CSS, o que são seletores?",
         "description": "Aqui vai uma de CSS..",
         "answer": 2,
@@ -80,7 +80,9 @@
       
     ],
     "external": [
-      ""
+      "https://quiz-valorant.johnatanivini.vercel.app/",
+      "https://lotr-quiz.filipe1309.vercel.app/",
+      "https://internet-quiz.johnmaroeli.vercel.app/"
     ],
     "theme": {
       "colors": {
